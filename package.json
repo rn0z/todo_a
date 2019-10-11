@@ -2,10 +2,9 @@
   "name": "todo_a",
   "version": "1.0.0",
   "description": "todo advantage for me",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js"
+    "start": "node app.js"
   },
   "keywords": [],
   "author": "",
