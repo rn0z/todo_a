@@ -1,13 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Router } from 'react-router-dom'
+import { Router, BrowserRouter } from 'react-router-dom'
 import Routes from './Routes'
 import history from './history'
 
 const App = () => (
-    <Router history={history}>
+    // <Router history={history}>
+    <BrowserRouter>
         <Routes /> 
-    </Router>
+    </BrowserRouter>
+    // </Router>
 )
+
+ReactDOM.render(<App />, document.getElementById('root'))
 
 export default App
