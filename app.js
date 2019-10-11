@@ -6,7 +6,8 @@ const app = express();
 app.use(express.static(path.join(__dirname, 'client', 'build')))
 
 app.get('/api/:whichAPI', (req, res) => {
-
+    res.json({'hello': 'world'})
+    console.log('Sent list of items');
 })
 
 app.get('*', (req, res) => {
