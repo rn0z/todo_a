@@ -5,11 +5,9 @@ import Routes from './Routes'
 import history from './history'
 
 const App = () => (
-    // <Router history={history}>
-    <BrowserRouter>
+    <Router history={history}>
         <Routes /> 
-    </BrowserRouter>
-    // </Router>
+    </Router>
 )
 
 ReactDOM.render(<App />, document.getElementById('root'))
