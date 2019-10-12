@@ -5,14 +5,11 @@ const app = express();
 
 app.use(express.static(path.join(__dirname, 'client', 'build')))
 
-app.get('/api/gethello', (req, res) => {
-    res.json({'hello': 'world'})
-    console.log('Sent list of items');
-})
-
 app.get('*', (req, res) => {
     res.sendFile(path.join(__dirname, 'client/build/index.html'))
 })
 
 const port = process.env.PORT | 3000
 app.listen(port)
+
+console.log('App listening on this port ' + port)
